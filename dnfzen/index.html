@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DNF怎么解除安全模式？本文提供最全面的DNF安全模式解除方法指南，包括短信验证、绑定手机、身份证认证及防沉迷系统自查步骤，解决无法登录、无法交易等问题。">
+    <meta name="keywords" content="dnf怎么解除安全模式,dnf安全模式解除,地下城与勇士安全模式,游戏账号安全">
+    <title>DNF怎么解除安全模式 - 账号安全解锁与防沉迷自查指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #00a1d6;
+            --primary-hover: #007bb8;
+            --secondary-color: #f5f6f7;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --bg-body: #f4f5f7;
+            --bg-card: #ffffff;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --radius: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--bg-card);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #00a1d6 0%, #007bb8 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 16px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        main {
+            padding-bottom: 60px;
+        }
+
+        /* Guide Steps */
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-left: 12px;
+            border-left: 4px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .guide-card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .step-list {
+            counter-reset: step;
+        }
+
+        .step-item {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 30px;
+        }
+
+        .step-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-item::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 32px;
+            height: 32px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 32px;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .step-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .step-desc {
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background-color: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #e65100;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        /* Troubleshooting Table */
+        .troubleshoot-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .troubleshoot-table th, .troubleshoot-table td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .troubleshoot-table th {
+            background-color: var(--secondary-color);
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .troubleshoot-table td {
+            color: var(--text-secondary);
+        }
+
+        .troubleshoot-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            margin-bottom: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 15px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--bg-card);
+            transition: background-color 0.2s;
+        }
+
+        .faq-question:hover {
+            background-color: #f9f9f9;
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            background-color: var(--bg-card);
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 15px 20px;
+            max-height: 200px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .faq-icon {
+            font-size: 12px;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 10px 0;
+                gap: 10px;
+            }
+
+            .hero h1 {
+                font-size: 22px;
+            }
+
+            .troubleshoot-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+        <a href="#" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>DNF安全助手</span>
+        </a>
+        <nav class="nav-links">
+            <a href="#" class="active">安全模式解除</a>
+            <a href="#">防沉迷设置</a>
+            <a href="#">账号找回</a>
+            <a href="#">常见问题</a>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">
+    <div class="container">
+        <h1>DNF怎么解除安全模式</h1>
+        <p>遇到登录受限、无法交易？立即查看官方验证流程、短信验证及防沉迷自查指南，快速恢复账号正常使用。</p>
+    </div>
+</div>
+
+<main class="container">
+    
+    <section class="guide-card">
+        <div class="section-title">解除安全模式标准流程</div>
+        <div class="step-list">
+            <div class="step-item">
+                <div class="step-title">1. 登录游戏客户端</div>
+                <div class="step-desc">启动地下城与勇士，使用受限账号尝试登录。若提示“安全模式”，系统通常会自动弹出验证窗口或跳转至安全中心。</div>
+            </div>
+            <div class="step-item">
+                <div class="step-title">2. 选择验证方式</div>
+                <div class="step-desc">在安全模式界面，系统会根据账号绑定情况提供不同选项。通常包括：短信验证、绑定手机验证、身份证认证或防沉迷验证。</div>
+            </div>
+            <div class="step-item">
+                <div class="step-title">3. 完成身份核验</div>
+                <div class="step-desc">按照提示输入验证码或进行人脸识别。如果系统检测到异地登录或异常操作，可能需要上传身份证照片进行人工审核。</div>
+            </div>
+            <div class="step-item">
+                <div class="step-title">4. 等待解除生效</div>
+                <div class="step-desc">验证通过后，安全模式通常会在几分钟内自动解除。部分情况需等待24小时（如防沉迷系统）。</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="guide-card">
+        <div class="section-title">常见解除方法详解</div>
+        
+        <div class="warning-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <div>
+                <strong>注意：</strong> 请勿相信非官方渠道的“自动解除”工具，以免账号信息泄露。请务必通过游戏内官方弹窗或腾讯安全中心进行操作。
+            </div>
+        </div>
+
+        <h3 style="margin: 20px 0 10px; font-size: 16px; color: var(--text-main);">方法一：短信验证</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 15px;">
+            系统会向您绑定的手机号发送一条验证码。输入验证码即可立即解除安全模式。这是最快捷的方式，要求手机号必须处于正常状态且与腾讯游戏账号绑定一致。
+        </p>
+
+        <h3 style="margin: 20px 0 10px; font-size: 16px; color: var(--text-main);">方法二：绑定手机验证</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 15px;">
+            如果未绑定手机号，系统会引导您在安全中心绑定手机。绑定成功后，下次遇到安全模式时可直接通过手机验证解除。
+        </p>
+
+        <h3 style="margin: 20px 0 10px; font-size: 16px; color: var(--text-main);">方法三：防沉迷系统自查</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 15px;">
+            若账号因“防沉迷系统”被锁定，通常是因为未完善实名信息或达到法定成年人年龄限制。需前往腾讯实名认证平台完善身份证信息，审核通过后通常在1-3个工作日内解除限制。
+        </p>
+
+        <h3 style="margin: 20px 0 10px; font-size: 16px; color: var(--text-main);">方法四：身份证认证</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 15px;">
+            对于未绑定手机或短信失效的账号，系统会要求上传身份证正反面照片。请确保照片清晰、无反光，且信息与身份证一致。
+        </p>
+
+        <table class="troubleshoot-table">
+            <thead>
+                <tr>
+                    <th width="30%">解除方式</th>
+                    <th width="70%">适用场景</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>短信验证</td>
+                    <td>手机号正常，收到验证码</td>
+                </tr>
+                <tr>
+                    <td>绑定手机</td>
+                    <td>未绑定手机，需先绑定</td>
+                </tr>
+                <tr>
+                    <td>身份证认证</td>
+                    <td>手机号失效或未绑定</td>
+                </tr>
+                <tr>
+                    <td>防沉迷解除</td>
+                    <td>未成年人账号或未实名</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="guide-card">
+        <div class="section-title">常见问题 FAQ</div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                解除安全模式需要多长时间？
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>短信验证通常在输入正确后立即生效。若进行身份证上传或人工审核，处理时间可能需要1-3个工作日。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                收不到短信验证码怎么办？
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>请检查手机是否拦截了短信，或更换网络环境重试。如果多次失败，请选择“手机号绑定”或“身份证认证”等其他方式。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                为什么账号一直处于安全模式？
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>这通常是因为账号存在异常登录记录、密码修改过于频繁或未完成实名认证。建议登录腾讯安全中心查看详细风控记录。</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                防沉迷解除后是否可以继续游戏？
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>防沉迷解除后，系统会根据您的实名认证年龄重新判定游戏时长限制。成年人账号解除后无时长限制，未成年人账号解除后需遵守防沉迷规定。</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023 DNF安全助手 - 专注于游戏账号安全与防沉迷服务指南</p>
+        <p style="font-size: 12px; color: #7f8c8d;">
+            本站内容仅供参考，游戏官方信息请以腾讯游戏客服公告为准。如遇账号被盗等严重问题，请立即联系腾讯客服。
+        </p>
+    </div>
+</footer>
+
+<script>
+    // FAQ Accordion Logic
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // Close other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
