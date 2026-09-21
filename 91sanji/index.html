@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>91三级在线天天操 - 网络安全警示与防范指南</title>
+    <meta name="description" content="本页面旨在提醒广大网民警惕网络色情内容的危害，提供网络安全教育、网络素养提升及健康上网的实用建议。请珍爱生活，远离非法及低俗信息。">
+    <meta name="keywords" content="91三级在线天天操,网络安全,网络素养,健康上网,网络危害">
+    <style>
+        :root {
+            --primary-color: #d32f2f;
+            --text-dark: #333;
+            --text-gray: #666;
+            --bg-light: #f5f7fa;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --max-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 1rem 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #ffeff0 0%, #fff5f5 100%);
+            padding: 4rem 20px;
+            text-align: center;
+            border-bottom: 1px solid #ffe0e0;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #b71c1c;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            margin-left: 10px;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Main Content */
+        main {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eee;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 60px;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+
+        /* Warning Card */
+        .warning-card {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 4px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .warning-icon {
+            font-size: 2rem;
+        }
+
+        .warning-content h3 {
+            margin-bottom: 10px;
+            color: #856404;
+        }
+
+        /* Grid Layouts */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-header {
+            padding: 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .card-header h3 {
+            font-size: 1.2rem;
+        }
+
+        .card-body {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .card-body p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .card-footer {
+            padding: 15px 20px;
+            background-color: #fafafa;
+            border-top: 1px solid #f0f0f0;
+            font-size: 0.9rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 10px;
+            background-color: #eee;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: #555;
+            margin-right: 5px;
+        }
+
+        /* List Style */
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            background: var(--white);
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .info-list .step-num {
+            background-color: var(--primary-color);
+            color: var(--white);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-gray);
+            display: none;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            margin: 20px 0;
+        }
+
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .disclaimer {
+            font-size: 0.85rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.5;
+            opacity: 0.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .header-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .nav-links {
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links a {
+                display: inline-block;
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>网络安全卫士</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#warning">危害警示</a>
+                <a href="#guide">防护指南</a>
+                <a href="#resources">网络素养</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>警惕网络低俗信息，守护身心健康</h1>
+        <p>互联网信息纷繁复杂，面对诸如“91三级在线天天操”等网络敏感词汇时，请保持理性判断，选择健康、积极的内容获取渠道。</p>
+        <div class="hero-actions">
+            <a href="#guide" class="btn">了解如何防范</a>
+            <a href="#resources" class="btn btn-outline">获取健康资源</a>
+        </div>
+    </section>
+
+    <main>
+        <!-- Warning Section -->
+        <section id="warning">
+            <h2 class="section-title">网络内容危害警示</h2>
+            <div class="warning-card">
+                <div class="warning-icon">⚠️</div>
+                <div class="warning-content">
+                    <h3>远离非法与低俗内容</h3>
+                    <p>网络空间不是法外之地。传播、浏览、收藏涉及色情、低俗、暴力等违法违规信息的网站或链接，不仅违反法律法规，更会对个人心理健康造成严重负面影响。请自觉抵制此类诱惑，维护清朗网络空间。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guide Section -->
+        <section id="guide">
+            <h2 class="section-title">健康上网防护指南</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>🛡️ 技术防护手段</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>安装正规的安全软件，开启实时防护功能。使用家长控制工具或内容过滤插件，屏蔽不良网站的访问请求。</p>
+                        <p>定期更新操作系统和浏览器，修补安全漏洞，防止恶意软件利用漏洞传播低俗信息。</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="tag">安全软件</span>
+                        <span class="tag">浏览器过滤</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>🧠 个人自律意识</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>培养健康的兴趣爱好，将注意力转移到阅读、运动、学习等积极活动上。</p>
+                        <p>遇到诱惑链接时，保持冷静，不点击、不传播，通过正规渠道获取所需信息。</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="tag">自律</span>
+                        <span class="tag">专注力</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-bottom: 20px; font-size: 1.4rem;">防范步骤详解</h3>
+            <ul class="info-list">
+                <li>
+                    <div class="step-num">1</div>
+                    <div>
+                        <strong>识别风险链接</strong>
+                        <p style="margin-bottom:0; font-size:0.9rem; color:#666;">对于包含敏感词汇、诱导点击或来源不明的链接，提高警惕，避免访问。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="step-num">2</div>
+                    <div>
+                        <strong>清理浏览记录</strong>
+                        <p style="margin-bottom:0; font-size:0.9rem; color:#666;">定期清理浏览器缓存和Cookie，防止恶意广告通过追踪代码进行推送。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="step-num">3</div>
+                    <div>
+                        <strong>举报不良信息</strong>
+                        <p style="margin-bottom:0; font-size:0.9rem; color:#666;">发现违法违规网站或链接，可通过国家互联网违法和不良信息举报中心进行举报。</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources">
+            <h2 class="section-title">推荐健康网络资源</h2>
+            <div class="grid-3">
+                <article class="card">
+                    <div class="card-header">
+                        <h3>📚 数字阅读</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>访问国家数字图书馆、各大出版社官方平台，获取权威、健康的图书和期刊资源。</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" style="color:var(--primary-color); text-decoration:none; font-weight:600;">阅读更多 &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-header">
+                        <h3>🎥 官方科普</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>观看央视网、人民网等官方媒体制作的纪录片、科普视频，丰富知识储备。</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" style="color:var(--primary-color); text-decoration:none; font-weight:600;">观看推荐 &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-header">
+                        <h3>🎮 体育健身</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>参与线上运动课程，如瑜伽、HIIT、广场舞教学等，增强体质，释放压力。</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" style="color:var(--primary-color); text-decoration:none; font-weight:600;">开始锻炼 &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <h2 class="section-title">常见问题解答</h2>
+            <div class="faq-item">
+                <div class="faq-question">如何判断一个网站是否安全？</div>
+                <div class="faq-answer">
+                    可以通过查看网站备案信息、检查HTTPS加密标志（地址栏有锁形图标）、以及利用第三方安全查询工具来评估网站的安全性。
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">浏览不良信息会对手机造成病毒吗？</div>
+                <div class="faq-answer">
+                    是的，部分低俗网站常含有恶意代码、木马或钓鱼链接，点击下载或访问极易导致手机中毒、隐私泄露或财产损失。
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">发现此类网站链接该怎么办？</div>
+                <div class="faq-answer">
+                    请勿点击或传播。建议立即通过正规渠道举报，并使用安全软件进行全盘扫描，确保设备安全。
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>网络安全卫士</h3>
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">隐私政策</a>
+                <a href="#">服务条款</a>
+                <a href="#">联系客服</a>
+            </div>
+            <p class="disclaimer">
+                本网站致力于提供网络安全教育服务。我们坚决反对任何形式的色情、低俗及违法信息传播。请广大网民共同维护网络环境的清朗与和谐。<br>
+                Copyright © 2023 网络安全卫士. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <script>
+        // 简单的 FAQ 交互逻辑
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const parent = item.parentNode;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
